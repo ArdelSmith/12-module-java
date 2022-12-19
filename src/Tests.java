@@ -24,10 +24,9 @@ public class Tests {
     public void TwoMinus(){
         Class.Decode("--2");
     }
-
-    @Test(expected = NumberFormatException.class)
+    @Test
     public void NegativeNumber(){
-        Class.Decode("-2");
+        assertEquals(Integer.valueOf(-2), Class.Decode("-2"));
     }
 
     @Test
