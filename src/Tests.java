@@ -21,13 +21,13 @@ public class Tests {
     }
 
     @Test(expected = NumberFormatException.class)
-    public void SecondMinus(){
-        Class.Decode("2-");
+    public void TwoMinus(){
+        Class.Decode("--2");
     }
 
     @Test(expected = NumberFormatException.class)
-    public void SecondPlus(){
-        Class.Decode("2+");
+    public void NegativeNumber(){
+        Class.Decode("-2");
     }
 
     @Test
